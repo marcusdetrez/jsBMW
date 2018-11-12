@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Colour Code Generator</title>
+   <link rel="stylesheet" type="text/css" href="testcode.css">
+   <script type="text/javascript" src="testcode.js"></script>
+</head>
+<body>
+<div id="container">
+    <p id="heading"> Colour Code Generator </p>
+ <fieldset>
+  <label for="r">R</label>
+  <input type="range" min="0" max="255" id="r" step="1" value="0" onmouseup="setColor()"/>
+  <output for="r" id="r_out">0</output>
+  <input type="button" value="+" id="r_inc" onmouseover="r_inc()">
+  <input type="button" value="-" id="r_dec" onmouseover="r_dec()">
+ </fieldset>  
+ <fieldset>
+  <label for="g">G</label>
+  <input type="range" min="0" max="255" id="g" step="1" value="0" onchange="setColor()"/>
+  <output for="g" id="g_out">0</output>
+  <input type="button" value="+" id="g_inc" onmouseover="g_inc()">
+  <input type="button" value="-" id="g_dec" onmouseover="g_dec()">
+ </fieldset>
+ <fieldset>
+  <label for="b">B</label>
+  <input type="range" min="0" max="255" id="b" step="1" value="0" onchange="setColor()"/>
+  <output for="b" id="b_out">0</output>
+  <input type="button" value="+" id="b_inc" onmouseover="b_inc()">
+  <input type="button" value="-" id="b_dec" onmouseover="b_dec()">
+ </fieldset>  
+    <output id="hex">#000000</output>
+    <input type="button" value="Stop All Intervals" onclick="clIn()">
+</div>
+</body>
+</html>
