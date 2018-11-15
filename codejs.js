@@ -3,6 +3,8 @@ function countPopup() {
 	return false;
 }
 
-function Popup() {
-	window.open(alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please"));
-}
+function Popup () {
+	if (window.confirm("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please")) { 
+  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+}}
+
