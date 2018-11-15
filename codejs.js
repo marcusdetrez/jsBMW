@@ -1,9 +1,8 @@
-var popup;
-
-function opnapopup() {
-	popup = setTimeout(alertfunction() , 1000);
+function countPopup() {
+	setTimeout("Popup()",10000);
+	return false;
 }
 
-function alertfunction() {
-	alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please");
+function Popup() {
+	window.open(alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please"));
 }
